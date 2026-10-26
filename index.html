@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Boikuntha Madhab Gogoi — Aspiring DevSecOps engineer</title>
+<meta name="description" content="Portfolio of Boikuntha Madhab Gogoi: Linux security tooling, applied ML and full-stack projects, with notes on what each repository does and does not show.">
+<meta property="og:title" content="Boikuntha Madhab Gogoi — Aspiring DevSecOps engineer">
+<meta property="og:description" content="Security tooling and systems projects, read against their source code.">
+<meta property="og:type" content="website">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://api.github.com; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="theme-color" content="#0d1116">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230d1116'/%3E%3Cpath d='M9 8v16h8a5 5 0 0 0 1-9.9A4.5 4.5 0 0 0 14 8z' fill='none' stroke='%238cc0e3' stroke-width='2.4'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="site.css">
+<script src="site.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar"><div class="w bar-in">
+  <a class="brand" href="#top">B. M. Gogoi</a>
+  <button class="icon" id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Primary"><ul>
+    <li><a href="#top">Home</a></li><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li>
+    <li><a href="#engineering">Engineering</a></li><li><a href="#writing">Writing</a></li><li><a href="#resume">Resume</a></li><li><a href="#contact">Contact</a></li>
+  </ul></nav>
+  <button class="icon" id="theme" aria-label="Switch colour theme">Theme</button>
+</div></header>
+
+<main id="main">
+<section id="top" class="hero w">
+  <div>
+    <p class="muted">Aspiring DevSecOps engineer · Class 12 student</p>
+    <h1><span>Boikuntha</span> <span>Madhab</span> <span>Gogoi</span></h1>
+    <p class="lead">I audit Linux systems and build tools meant to run on modest hardware. My projects cover security tooling, a healthcare triage prototype, applied ML and a live-tracking mobile app.</p>
+    <p class="actions"><a class="btn primary" href="#projects">See projects</a><a class="btn" href="https://drive.google.com/file/d/1tM7T8pHGWBwXbTpWEJwJQvoc0ggfmNai/view?usp=drive_link" rel="noopener noreferrer">Resume</a><a class="btn" href="https://github.com/boikzdev" rel="noopener noreferrer">GitHub</a><a class="btn" href="https://www.linkedin.com/in/boikunthamadhabgogoi/" rel="noopener noreferrer">LinkedIn</a><a class="btn" href="https://x.com/boikz_dev" rel="noopener noreferrer">X</a></p>
+  </div>
+  <aside class="ledger" aria-labelledby="led">
+    <h2 id="led">What I found reading my own repositories</h2>
+    <p class="muted small">Source read on 26 October 2026. Not a benchmark.</p>
+    <dl>
+      <div><dt>linux-security-auditor</dt><dd>5 shell modules, 3 Python modules, 2 test files</dd></div>
+      <div><dt>Aurora-Clarity</dt><dd>134-line Streamlit app; training runs inside it</dd></div>
+      <div><dt>ArogyaRoute-NE</dt><dd>847-line Flask API; RAM claim unmeasured</dd></div>
+      <div><dt>School-Bus-Tracker</dt><dd>Expo app on Firebase; Express has a health route only</dd></div>
+      <div><dt>Face-Analysis-Engine</dt><dd>126-line script; model files not committed</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="about" class="w sec">
+  <h2>About</h2>
+  <div class="prose">
+    <p>I started in general web development and moved toward Linux systems, security and cloud work. What keeps me there is the practical side: finding weak permissions, reading auth logs, closing ports, and making software behave on a small machine or a free tier.</p>
+    <p>I work by building something, checking it against its own claims, and writing down what fell short. This site does the same: each case study separates what the code shows from what I have not verified.</p>
+    <p>I am a Class 12 student. Profile details here come from my resume and public GitHub repositories. LinkedIn is linked, not synced.</p>
+  </div>
+</section>
+
+<section id="projects" class="w sec">
+  <h2>Projects</h2>
+  <p class="muted">Five repositories, each with a case study written from its source code.</p>
+  <div id="featured"></div>
+  <noscript><p>Case studies need JavaScript. The repositories are on <a href="https://github.com/boikzdev">GitHub</a>.</p></noscript>
+  <h3 class="idx">All public repositories</h3>
+  <div id="filters" class="chips" role="group" aria-label="Filter by language"></div>
+  <ul id="repos" class="repos"></ul>
+</section>
+
+<section id="engineering" class="w sec">
+  <h2>Engineering</h2>
+  <p class="muted">Grouped by what I have used in repositories versus what my resume lists that I have not yet shown in code.</p>
+  <div id="skills" class="skills"></div>
+</section>
+
+<section id="writing" class="w sec">
+  <h2>Writing</h2>
+  <div id="essays" class="prose"></div>
+</section>
+
+<section id="resume" class="w sec">
+  <h2>Resume</h2>
+  <p class="prose">My full resume is on Google Drive. Summary: Class 12 student; Linux hardening and auditing, Python, Bash, TypeScript; Azure OpenAI and Azure ML; five featured projects; AI governance essays.</p>
+  <p class="actions"><a class="btn primary" href="https://drive.google.com/file/d/1tM7T8pHGWBwXbTpWEJwJQvoc0ggfmNai/view?usp=drive_link" rel="noopener noreferrer">View resume</a></p>
+</section>
+
+<section id="contact" class="w sec">
+  <h2>Contact</h2>
+  <p class="prose">Email is the best way to reach me. You can also find me on LinkedIn, GitHub, Discord and X.</p>
+  <p class="actions"><a class="btn primary" href="mailto:boikuntha.dev@gmail.com">boikuntha.dev@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/boikunthamadhabgogoi/" rel="noopener noreferrer">LinkedIn</a><a class="btn" href="https://github.com/boikzdev" rel="noopener noreferrer">GitHub</a><a class="btn" href="https://discord.com/users/1401600014974718108" rel="noopener noreferrer">Discord</a><a class="btn" href="https://x.com/boikz_dev" rel="noopener noreferrer">X</a></p>
+</section>
+</main>
+<footer class="w foot muted small">Boikuntha Madhab Gogoi. Affiliated with GitHub &amp; LinkedIn.</footer>
+
+<dialog id="cs" aria-labelledby="cs-t"><div id="cs-body"></div></dialog>
+</body>
+</html>
